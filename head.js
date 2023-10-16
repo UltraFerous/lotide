@@ -15,7 +15,7 @@ const head = function(arr) {
 // TEST CODE
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-console.log(head([0]));
-console.log(head([]));
+assertEqual(head([0]), 0);
+assertEqual(head([]), undefined);
 
 
