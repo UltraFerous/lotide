@@ -23,16 +23,19 @@ const tail = function(arr) {
 
 // FUNCTION IMPLEMENTATION
 const eqArrays = function(arrOne, arrTwo) {
-  let equalsCheck = false;
-  let equalsCount = 0;
+  if(arrOne.length !== arrTwo.length){
+    return false;
+  }
   for (let i = 0; i < arrOne.length; i++) {
     if (arrOne[i] !== arrTwo[i]) {
-      return equalsCheck;
+      return false;
     }
   }
-  equalsCheck = true;
-  return equalsCheck;
+  return true;
 };
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 2, '3'], [1, 2, 3]), false); // => should FAIL
+assertEqual(eqArrays([], []), true); // => should FAIL
+assertEqual(eqArrays([1], [1, 2]), false); // => should FAIL
+assertEqual(eqArrays(["Test"], ["Test"]), true); // => should FAIL
