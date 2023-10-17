@@ -15,7 +15,6 @@ const head = function(arr) {
 // FUNCTION IMPLEMENTATION
 const tail = function(arr) {
   let newArr = [];
-
   for (let i = 1; i < arr.length; i++) {
     newArr.push(arr[i]);
   }
@@ -30,17 +29,10 @@ const eqArrays = function(arrOne, arrTwo) {
     if (arrOne[i] !== arrTwo[i]) {
       return equalsCheck;
     }
-    equalsCount++;
   }
-  if (equalsCount === arrOne.length && arrTwo.length === arrOne.length) {
-    equalsCheck = true;
-  }
+  equalsCheck = true;
   return equalsCheck;
 };
-
 // TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertEqual(eqArrays([1, 2, '3'], [1, 2, 3]), false); // => should FAIL
-
-
-
