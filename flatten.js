@@ -43,8 +43,8 @@ const flatten = function(arr) {
         flatArr.push(value);
     }
   }
-  console.log(flatArr);
+  return flatArr;
 };
 
 // TEST CODE
-flatten([1, 2, [3, 4], 5, [6]]);  // => [1, 2, 3, 4, 5, 6]
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
