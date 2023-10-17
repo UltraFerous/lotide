@@ -23,10 +23,10 @@ const eqArrays = function(arrOne, arrTwo) {
 // FUNCTION IMPLEMENTATION
 const assertArraysEqual = function(arrOne, arrTwo) {
   if (eqArrays(arrOne, arrTwo)) {
-    console.log(`✅✅✅ Arrays Are Equal: [${arrOne}] === [${arrTwo}]`);
+    console.log(`✅✅✅ Assertion Passed: [${arrOne}] === [${arrTwo}]`);
     return;
   }
-  console.log(`🛑🛑🛑 Arrays Are Not Equal: [${arrOne}] !== [${arrTwo}]`);
+  console.log(`🛑🛑🛑 Assertion Failed: [${arrOne}] !== [${arrTwo}]`);
 };
 
 
