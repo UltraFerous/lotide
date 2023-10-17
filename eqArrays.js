@@ -26,24 +26,21 @@ const tail = function(arr) {
 const eqArrays = function(arrOne, arrTwo) {
   let equalsCheck = false;
   let equalsCount = 0;
-
-  arrOne.sort();
-  arrTwo.sort()
-
   for (let i = 0; i < arrOne.length; i++) {
-    if (arrOne[i] === arrTwo[i]) {
-      equalsCount++;
+    if (arrOne[i] !== arrTwo[i]) {
+      return equalsCheck;
     }
+    equalsCount++;
   }
-
   if (equalsCount === arrOne.length && arrTwo.length === arrOne.length) {
     equalsCheck = true;
   }
-
   return equalsCheck;
 };
 
 // TEST CODE
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, '3'], [1, 2, 3]), false); // => should FAIL
 
 
 
