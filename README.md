@@ -1,4 +1,5 @@
 ## Update Log
+- Flatten (2023-10-17)
 - Without (2023-10-17)
 - Assert Equal Array (2023-10-17)
 - Equal Array (2023-10-17)
