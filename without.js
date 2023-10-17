@@ -45,6 +45,7 @@ const without = function(arrOne, arrTwo){
 
 // TEST CODE
 without([1, 2, 3], [1]) // => [2, 3]
+without(["A"], ["A"]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 without([false, false, true], [false]); 
 
