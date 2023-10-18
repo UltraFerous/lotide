@@ -35,7 +35,9 @@ const letterPositions = function(sentence) {
   let index = 0;
 
   for (let letter of sentence) {
-    if (results[letter] === undefined) {
+    if (letter === " ") {
+      index++
+    } else if (results[letter] === undefined) {
       results[letter] = [index];
       index++;
     } else {
