@@ -12,12 +12,12 @@ const countLetters = function(str) {
   let count = {};
 
   for (let letter of str) {
-      if (count[letter] === undefined) {
-        count[letter] = 1;
-      } else {
-        count[letter]++;
-      }
+    if (count[letter] === undefined) {
+      count[letter] = 1;
+    } else {
+      count[letter]++;
     }
+  }
   return count;
 };
 

@@ -19,7 +19,7 @@ const countOnly = function(allItems, itemsToCount) {
   }
 
   for (let index of allItems) {
-    for (let valid of countable) {
+    for (let valid of countable) { // Array Find, Map
       if (index === valid) {
         if (count[index] === undefined) {
           count[index] = 1;
