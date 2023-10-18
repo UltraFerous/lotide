@@ -1,4 +1,5 @@
 ## Update Log
+- Count Letters (2023-10-18)
 - Count Only (2023-10-18)
 - Middle (2023-10-18)
 - Flatten (2023-10-17)

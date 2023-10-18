@@ -33,6 +33,7 @@ const countOnly = function(allItems, itemsToCount) {
   return count;
 };
 
+// TEST CODE
 const firstNames = [
   "Karl",
   "Salima",
