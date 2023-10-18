@@ -1,4 +1,5 @@
 ## Update Log
+- Assert Objects Equal (2023-10-18)
 - Equal Objects (2023-10-18)
 - Count Letters (2023-10-18)
 - Count Only (2023-10-18)
