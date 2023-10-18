@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function(str) {
+const countLetters = function(str) {
   let count = {};
 
   for (let letter of str) {
@@ -23,4 +23,4 @@ const countOnly = function(str) {
 
 // TEST CODE
 
-console.log(countOnly("LHL"));
+console.log(countLetters("LHL"));
