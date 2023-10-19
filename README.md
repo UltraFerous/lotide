@@ -1,4 +1,6 @@
 ## Update Log
+- Find Key (2023-10-19)
+- Take Until (2023-10-19)
 - Assert Objects Equal (2023-10-18)
 - Equal Objects (2023-10-18)
 - Count Letters (2023-10-18)
