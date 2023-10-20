@@ -33,15 +33,14 @@ const assertArraysEqual = function(arrOne, arrTwo) {
 const flatten = function(arr) {
   let flatArr = [];
   for (let value of arr) {
-    switch (Array.isArray(value)) {
-      case true:
-        for (let point of value) {
-          flatArr.push(point);
-        }
-        break;
-      default:
-        flatArr.push(value);
+    if (Array.isArray(value) === true) {
+      for (let point of value) {
+        flatArr.push(point);
+      }
+    } else {
+      flatArr.push(value);
     }
+
   }
   return flatArr;
 };
