@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ultraferous/lotide",
   "version": "1.0.0",
-  "description": "- Modularized Functions (2023-10-23) - Find Key By Value (2023-10-20) - Find Key (2023-10-19) - Take Until (2023-10-19) - Assert Objects Equal (2023-10-18) - Equal Objects (2023-10-18) - Count Letters (2023-10-18) - Count Only (2023-10-18) - Middle (2023-10-18) - Flatten (2023-10-17) - Without (2023-10-17) - Assert Equal Array (2023-10-17) - Equal Array (2023-10-17) - Tails (2023-10-16) - Heads (2023-10-16) - Assert Equal (2023-10-16)",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library. This project was created and published by me as part of my learnings at Lighthouse Labs. ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/UltraFerous/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "@ultraferous",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/UltraFerous/lotide/issues"
