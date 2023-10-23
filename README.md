@@ -1,4 +1,5 @@
 ## Update Log
+- Modularized Functions (2023-10-23)
 - Find Key By Value (2023-10-20)
 - Find Key (2023-10-19)
 - Take Until (2023-10-19)
