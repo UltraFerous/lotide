@@ -11,11 +11,11 @@ describe("#tail", () => {
   it("returns Labs when ([Hello, Lighthouse, Labs])[1] is passed", () => {
     assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"])[1], "Labs");
   });
-  it("returns undefined when head([0]) is passed", () => {
-    assert.strictEqual(tail([0])[0], undefined);
+  it("returns undefined when tail([0]) is passed", () => {
+    assert.deepEqual(tail([0]), []);
   });
   it("returns '[]' for []", () => {
-    assert.strictEqual(tail([])[0], undefined);
+    assert.deepEqual(tail([]), []);
   });
   it("returns an array with a length of 2 when [Yo Yo, Lighthouse, Labs] is passed", () => {
     assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2);
